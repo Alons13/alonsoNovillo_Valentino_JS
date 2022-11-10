@@ -7,6 +7,7 @@ const formcontainer = document.querySelector(".formContainer")
 const sorteo = document.querySelector(".sorteoBtn")
 const celular = document.querySelector("#celular")
 const submit = document.querySelector(".btnprimary")
+const precioticket1 = 100;
 var codigo = Math.floor(Math.random() * (999999 - 111111) + 1);
 
 class Usuario {
@@ -41,15 +42,7 @@ submit.addEventListener("click", () => {
 
 function hola(newParticipant){
     Swal.fire("Compra Completa!", `Se han comprado ${arrayUsers[0].ticket} tickets por la suma de $ ${arrayUsers[0].ticket*precioticket1} a nombre de: ${arrayUsers[0].nombre} ${arrayUsers[0].apellido} con el email: ${arrayUsers[0].email}`)
-    swal({
-        title: "Good job!",
-        text: "You clicked the button!",
-        icon: "success",
-      });
     
-    
-    alert("hola")
-    alert(arrayUsers[0].nombre)
     
     
 
